@@ -150,7 +150,7 @@ MonoBehaviour:
   joystick: {fileID: 1467910267}
   player: {fileID: 186487085}
   gravity: 15
-  speed: 2
+  speed: 6
 --- !u!54 &186487084
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -360,7 +360,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.1413642, y: -0, z: -0, w: 0.9899577}
-  m_LocalPosition: {x: 0, y: 1.639, z: 0.292}
+  m_LocalPosition: {x: 0, y: 1.639, z: 0.228}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_Children: []
   m_Father: {fileID: 186487082}

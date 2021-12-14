@@ -11,24 +11,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public Text error;
 
     //string errorInfo = "Error!";
-    // Start is called before the first frame update
-    void Start()
-    {
-        //error.text = errorInfo;
-        Debug.Log("Connecting");
-        PhotonNetwork.ConnectUsingSettings();
-    }
-    public override void OnConnectedToMaster()
-    {
-        Debug.Log("Connected");
-        PhotonNetwork.JoinLobby();
-    }
-
-    public override void OnJoinedLobby()
-    {
-        Debug.Log("Joined Main Lobby");
-    }
-
+ 
     public void CreateRoom()
     {
         if (string.IsNullOrEmpty(createInput.text))
@@ -43,13 +26,13 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-
+        
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         error.text = message;
-        Debug.Log("Error creating room!");
+        Debug.Log("Error creating room! " + message);
     }
 
 

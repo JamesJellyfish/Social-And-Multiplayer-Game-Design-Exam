@@ -9,8 +9,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     public InputField createInput;
     public InputField joinInput;
     public Text error;
-
-    //string errorInfo = "Error!";
  
     public void CreateRoom()
     {
@@ -19,14 +17,14 @@ public class Launcher : MonoBehaviourPunCallbacks
             PhotonNetwork.CreateRoom(createInput.text);
     }
 
-    //    public void JoinRoom()
-    //    {
-    //        PhontonNetwork.JoinRoom(joinInput.text);
-    //    }
+    public void JoinRoom()
+    {
+        PhotonNetwork.JoinRoom(joinInput.text);
+    }
 
     public override void OnJoinedRoom()
     {
-        
+        PhotonNetwork.LoadLevel("Start");
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)

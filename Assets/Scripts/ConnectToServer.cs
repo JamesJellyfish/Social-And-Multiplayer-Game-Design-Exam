@@ -8,7 +8,6 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
 {
     void Start()
     {
-        //error.text = errorInfo;
         Debug.Log("Connecting");
         PhotonNetwork.ConnectUsingSettings();
     }

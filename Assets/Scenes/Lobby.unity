@@ -1350,9 +1350,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473994934}
-        m_TargetAssemblyTypeName: JoinButton, Assembly-CSharp
-        m_MethodName: OnClickStart
+      - m_Target: {fileID: 2070912347}
+        m_TargetAssemblyTypeName: Launcher, Assembly-CSharp
+        m_MethodName: JoinRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 592369443}
   - component: {fileID: 592369442}
   m_Layer: 5
-  m_Name: NAME & STUDENT NUMBER
+  m_Name: RoomP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -193,9 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'James
-
-    100741773'
+  m_Text: Room
 --- !u!222 &592369443
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -438,7 +436,7 @@ GameObject:
   - component: {fileID: 1954064646}
   - component: {fileID: 1954064649}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Start Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

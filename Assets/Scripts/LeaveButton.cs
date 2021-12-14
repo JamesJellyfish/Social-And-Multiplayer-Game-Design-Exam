@@ -7,6 +7,6 @@ public class LeaveButton : MonoBehaviour
 {
     public void OnClickStart()
     {
-        SceneManager.LoadScene("Loading");
+        SceneManager.LoadScene("Lobby");
     }
 }

@@ -26,7 +26,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel("Start");
+        PhotonNetwork.LoadLevel("RoomPanel");
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)

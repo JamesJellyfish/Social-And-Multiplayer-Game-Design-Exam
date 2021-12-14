@@ -15,11 +15,13 @@ public class Launcher : MonoBehaviourPunCallbacks
         if (string.IsNullOrEmpty(createInput.text))
                 return;
             PhotonNetwork.CreateRoom(createInput.text);
+        Debug.Log("Room was Created");
     }
 
     public void JoinRoom()
     {
         PhotonNetwork.JoinRoom(joinInput.text);
+        Debug.Log("Join Room");
     }
 
     public override void OnJoinedRoom()

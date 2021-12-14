@@ -10,9 +10,11 @@ public class Launcher : MonoBehaviourPunCallbacks
     public InputField joinInput;
     public Text error;
 
+    //string errorInfo = "Error!";
     // Start is called before the first frame update
     void Start()
     {
+        //error.text = errorInfo;
         Debug.Log("Connecting");
         PhotonNetwork.ConnectUsingSettings();
     }
@@ -46,6 +48,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
+        error.text = message;
         Debug.Log("Error creating room!");
     }
 

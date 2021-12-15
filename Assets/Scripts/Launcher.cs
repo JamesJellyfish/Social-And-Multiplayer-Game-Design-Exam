@@ -22,11 +22,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public Transform playerListContent; 
 
     public Button startButton;
-    public Button settingsButton;
-
-    //public GameObject readyButton;
-    //public Transform buttonOrganizer;
-
+    
     public void Start()
     {
         lobbyPanel.SetActive(true);
@@ -64,12 +60,12 @@ public class Launcher : MonoBehaviourPunCallbacks
             if (i == 0)
             {
                 startButton.interactable = true;
-                settingsButton.interactable = true;
+                
             }
             else
             {
                 startButton.interactable = false;
-                settingsButton.interactable = false;
+                
             }
         }
 

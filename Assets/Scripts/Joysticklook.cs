@@ -27,6 +27,4 @@ public class Joysticklook : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(updown, 0.0f, 0.0f);//camera movement for looking up and down
     }
-
-
 }

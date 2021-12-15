@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class joystickmovement : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class joystickmovement : MonoBehaviour
     Vector3 movementDirection;
     public float gravity = 15.0f;//Gravity intensity
     public float speed;
-   
+    public PhotonView view;
+
     // Update is called once per frame
     void Update()
     {
@@ -25,7 +27,7 @@ public class joystickmovement : MonoBehaviour
 
         player.Move(movementDirection * Time.deltaTime);
 
-        
+   
 
     }
 

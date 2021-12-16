@@ -15,19 +15,22 @@ public class joystickmovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float hori = joystick.Horizontal;
-        float vert = joystick.Vertical;
+        if (view.IsMine)
+        {
 
-        movementDirection = new Vector3(hori, 0, vert);
-        movementDirection = transform.TransformDirection(movementDirection);
+            float hori = joystick.Horizontal;
+            float vert = joystick.Vertical;
 
-        movementDirection *= speed;
+            movementDirection = new Vector3(hori, 0, vert);
+            movementDirection = transform.TransformDirection(movementDirection);
 
-        movementDirection.y -= gravity;
+            movementDirection *= speed;
 
-        player.Move(movementDirection * Time.deltaTime);
+            movementDirection.y -= gravity;
 
-   
+            player.Move(movementDirection * Time.deltaTime);
+        }
+
 
     }
 

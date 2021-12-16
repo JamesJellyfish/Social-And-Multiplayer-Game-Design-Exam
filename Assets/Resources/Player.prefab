@@ -50,7 +50,7 @@ MonoBehaviour:
   player: {fileID: 9049058600718270684}
   gravity: 15
   speed: 6
-  view: {fileID: 0}
+  view: {fileID: 965399093352534444}
 --- !u!1 &2786130229677383757
 GameObject:
   m_ObjectHideFlags: 0
